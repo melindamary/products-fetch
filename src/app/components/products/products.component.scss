@@ -1,0 +1,22 @@
+.category-name{
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 72px;
+    margin-top: 20px;
+}
+.scrollable-row{
+    width: auto;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.scrollable-row::-webkit-scrollbar{
+    display: none;
+}
+.card-row{
+    display: flex;
+    width: auto;
+}
+
+

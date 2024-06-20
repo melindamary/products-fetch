@@ -1,0 +1,18 @@
+@for(items of categorizedProducts; track categorizedProducts.category){
+    <div class="category-name">{{items.category}}</div>
+    <div class="container w-100">
+    <div class="scrollable-row">
+      <div class="card-row">
+      @for(item of items.products; track item.id){
+          <div class="card-col">
+          <app-card [title]="item.title" [description]="item.description" [imgSrc]="item.images[0]"></app-card>
+          </div>
+      }
+      </div>
+    </div>
+    </div>
+} 
+
+
+
+
